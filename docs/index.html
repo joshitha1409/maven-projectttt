@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 Library Management System</h1>
+    <p>Manage your library easily</p>
+</header>
+
+<div class="container">
+
+    <h2>Add New Book</h2>
+
+    <input type="text" id="bookName" placeholder="Enter Book Name">
+    <input type="text" id="author" placeholder="Enter Author Name">
+    <button onclick="addBook()">Add Book</button>
+
+    <h2>Search Books</h2>
+    <input type="text" id="search"
+           placeholder="Search by book name..." onkeyup="searchBook()">
+
+    <h2>Available Books</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="bookList">
+        </tbody>
+    </table>
+
+</div>
+
+<footer>
+    <p>© 2026 Library Management System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
